@@ -83,7 +83,6 @@ public class Scanner {
                     while (peek() != '\n' && !isAtEnd()) advance();
                     break;
                 } else {
-                    System.out.println("Found a trailing slash");
                     addToken(SLASH);
                     break;
                 }
