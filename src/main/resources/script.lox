@@ -1,0 +1,3 @@
+print "hello";
+print true;
+print 2+1;
