@@ -27,3 +27,12 @@ logic_and      → equality ( "and" equality )* ;
 
 unary          → ( "!" | "-" ) unary | call ;
 call           → primary ( "(" arguments? ")" )* ;
+
+---
+
+declaration    → funDecl
+               | varDecl
+               | statement ;
+
+funDecl        → "fun" function ;
+function       → IDENTIFIER "(" parameters? ")" block ;
